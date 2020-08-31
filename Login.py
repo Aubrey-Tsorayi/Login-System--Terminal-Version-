@@ -1,3 +1,5 @@
+import database
+
 auser = 'admin'
 apasswd = 'admin'
 username = []
@@ -20,14 +22,10 @@ while run:
         else:
             print("Username name not found")
     elif choice == 2:
-        temp = input('Create username: ')
-        username.append(temp)
-        temp2 = input('Enter password: ')
-        confirm = input('Re-type password: ')
-        if temp2 == confirm:
-            print("Account for ",username , "created")
-        else:
-            print("Password dont match")
+        username = input('Create username: ')
+        password = input('Create password: ')
+        database.add_user(username,password)
+        print('Account created')
     elif choice == 3:
         run = False
 
