@@ -1,12 +1,7 @@
 import database
 
-auser = 'admin'
-apasswd = 'admin'
-username = []
-password = []
-run = True
 
-while run:
+while True:
     print("////////////////////////////")
     print("        Welcome             ")
     print("////////////////////////////")
@@ -21,7 +16,7 @@ while run:
         print("Login succees")
         break
     elif choice == 3:
-        run = False
+        break
 
         print("////////////////////////////")
         print("       Thank you            ")
